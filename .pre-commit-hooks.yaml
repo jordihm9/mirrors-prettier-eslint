@@ -6,5 +6,5 @@
     'types': [files]
     args: ["i"]
     require_serial: false
-    additional_dependencies: ["prettier-eslint@4.4.0"]
+    additional_dependencies: ["prettier-eslint@5.0.0"]
     minimum_pre_commit_version: '0'
