@@ -1,7 +1,7 @@
 -   id: prettier-eslint
     name: prettier-eslint
     description: 'Run prettier && eslint'
-    entry: prettier --write --list-different --ignore-unknown && eslint --cache --fix
+    entry: prettier --write --list-different --ignore-unknown . && eslint --cache --fix
     language: node
     args: []
     require_serial: false
