@@ -1,10 +1,10 @@
 -   id: prettier-eslint
     name: prettier-eslint
-    description: ''
-    entry: prettier-eslint
+    description: 'Run prettier & eslint'
+    entry: prettier --write --list-different --ignore-unknown
     language: node
-    'types': [files]
-    args: ["i"]
+    types: [text]
+    args: []
     require_serial: false
-    additional_dependencies: ["prettier-eslint@16.1.2"]
+    additional_dependencies: ["prettier@3.1.0", "eslint@7.32.0"]
     minimum_pre_commit_version: '0'
