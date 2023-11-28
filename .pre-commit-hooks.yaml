@@ -1,9 +1,18 @@
--   id: prettier-eslint
-    name: prettier-eslint
-    description: 'Run prettier & eslint'
+-   id: prettier
+    name: prettier
+    description: 'Run prettier'
     entry: prettier --write --list-different --ignore-unknown
     language: node
     args: []
     require_serial: false
-    additional_dependencies: ["prettier@3.1.0", "eslint@7.32.0"]
+    additional_dependencies: ["prettier@3.1.0"]
+    minimum_pre_commit_version: '0'
+-   id: eslint
+    name: eslint
+    description: 'Run eslint'
+    entry: eslint --cache --fix
+    language: node
+    args: []
+    require_serial: false
+    additional_dependencies: ["eslint@7.32.0"]
     minimum_pre_commit_version: '0'
